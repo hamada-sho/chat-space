@@ -28,24 +28,26 @@ Things you may want to cover:
 |Column|Type|Option|
 |------|----|------|
 |id|integer|null: false|
-|name|text|null: false|
+|name|string|null: false|
 |password|text|null: false|
 |mail-address|text|null: fa;se, unique: true|
 
 ### Association
 - has_many :groups, through: :users_groups
 - has_many :comments
+- has_many :users_groups
 
 ## groupsテーブル
 
 |Column|Type|Option|
 |------|----|------|
 |id|integer|null: false|
-|name|text|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: :users_groups
 - has_many :comments
+- has_many :users_groups
 
 ## users_groupsテーブル
 
