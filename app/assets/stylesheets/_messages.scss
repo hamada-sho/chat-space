@@ -55,7 +55,6 @@
         position: relative;
         top: 20px;
         left: 20px;
-        // background-color: coral;
         width: 260px;
         height: 41px;
         margin-bottom: 40px;
@@ -71,11 +70,11 @@
           height: 13px;
           color: #ffffff;
           font-size: 11px;
-          // background-color: chartreuse;
         }
       }
     }
   }
+
 
   &__main-chat{
     height: 100vh;
@@ -85,16 +84,97 @@
       height: 100px;
       width: calc(100vw - 300px);
       background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      &__group-block{
+        height: 64px;
+        margin-top: 35px;
+        &__group-name{
+          margin-bottom: 15px;
+          font-size: 20px;
+        }
+        &__group-member{
+          height: 18px;
+          color: #999999;
+          font-size: 12px;
+          display: flex;
+          justify-content: space-between;
+          line-height: 18px;
+          &--member-name{
+          }
+        }
+      }
+      &__edit-block{
+        height: 40px;
+        margin: 30px 0 0;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 40px;
+        color: #38aef0;
+        border: solid 1px #38aef0;
+      }
     }
     &__contents{
       height: calc(100vh - 100px - 90px);
       width: calc(100vw - 300px);
       background-color: #fafafa;
+      padding: 46px 40px;
+      &__chat-one-space{
+        padding-bottom: 40px;
+        height: 95px;
+        &__chat-data{
+          margin-bottom: 10px;
+          height: 18px;
+          display: flex;
+          &--name{
+            font-size: 16px;
+            padding-right: 10px;
+          }
+          &--date{
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+      &__chat-word{
+        font-size: 14px;
+        color: #434a54;
+        margin-bottom: 10px;
+      }
+      }
     }
     &__message-form{
       height: 90px;
       width: calc(100vw - 300px);
       background-color: #d2d2d2;
+      padding: 20px 40px;
+      display: flex;
+      &__message-space{
+        background-color: #ffffff;
+        width: 530px;
+        display: flex;
+        position: relative;
+        &--text-area{
+          width: 530px;
+          padding: 0 40px 0 10px;
+        }
+        &--phone-icon{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: x-large;
+        }
+      }
+      &__send-space{
+        margin-left: 15px;
+        padding: 0 30px;
+        background-color: #38aef0;
+        width: 94px;
+        color: #ffffff;
+      }
     }
+  }
+  .hidden{
+    display: none;
   }
 }

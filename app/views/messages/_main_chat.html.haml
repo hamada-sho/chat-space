@@ -1,5 +1,28 @@
 .wrapper__main-chat
   .wrapper__main-chat__group-info
+    .wrapper__main-chat__group-info__group-block
+      .wrapper__main-chat__group-info__group-block__group-name
+        暇人
+      .wrapper__main-chat__group-info__group-block__group-member
+        Member :
+        .wrapper__main-chat__group-info__group-block__group-member--member-name
+          sho
+    .wrapper__main-chat__group-info__edit-block
+      Edit
   .wrapper__main-chat__contents
+    .wrapper__main-chat__contents__chat-one-space
+      .wrapper__main-chat__contents__chat-one-space__chat-data
+        .wrapper__main-chat__contents__chat-one-space__chat-data--name
+          dho
+        .wrapper__main-chat__contents__chat-one-space__chat-data--date
+          2019/12/03(Tue)20:03:09
+      .wrapper__main-chat__contents__chat-one-space__chat-word
+        yahho
+  
   .wrapper__main-chat__message-form
-   
+    .wrapper__main-chat__message-form__message-space
+      %input{type: "text", placeholder: "type a message", class: "wrapper__main-chat__message-form__message-space--text-area"}
+      %label{class: "wrapper__main-chat__message-form__message-space--phone-icon"}
+        = icon('far', 'image')
+        %input{type: "file", class: "hidden"}
+    %input.wrapper__main-chat__message-form__send-space{type: "submit", value: "Send"}
