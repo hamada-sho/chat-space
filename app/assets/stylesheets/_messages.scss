@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  &__side-bar {
+    height: 100vh;
+    width: 300px;
+    background-color: #253141;
+    &__user-list{
+      height: 100px;
+      width: 300px;
+      background-color: #253141;
+      position: relative;
+      &__user-name-space {
+        height: 16px;
+        width: 260px;
+        position: absolute;
+        top: 42px;
+        left: 20px;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        &__font-list {
+          width: 60px;
+          position: relative;
+          
+          &--font-edit {
+            color: #ffffff;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 21px;
+          }
+          &--font-gear {
+            color: #ffffff;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    &__group-list{
+      height: calc(100vh - 100px);
+      width: 300px;
+      background-color: #2f3e51;
+      position: relative;
+      &__group-block{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        // background-color: coral;
+        width: 260px;
+        height: 41px;
+        margin-bottom: 40px;
+        &__group-name-space{
+          width: 260px;
+          height: 23px;
+          color: #ffffff;
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__last-comment{
+          width: 260px;
+          height: 13px;
+          color: #ffffff;
+          font-size: 11px;
+          // background-color: chartreuse;
+        }
+      }
+    }
+  }
+
+  &__main-chat{
+    height: 100vh;
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    &__group-info{
+      height: 100px;
+      width: calc(100vw - 300px);
+      background: #ffffff;
+    }
+    &__contents{
+      height: calc(100vh - 100px - 90px);
+      width: calc(100vw - 300px);
+      background-color: #fafafa;
+    }
+    &__message-form{
+      height: 90px;
+      width: calc(100vw - 300px);
+      background-color: #d2d2d2;
+    }
+  }
+}
