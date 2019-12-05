@@ -24,6 +24,7 @@
         color: #ffffff;
         display: flex;
         justify-content: space-between;
+        font-weight: bold;
         &__font-list {
           width: 60px;
           position: relative;
@@ -129,6 +130,7 @@
           display: flex;
           &--name{
             font-size: 16px;
+            font-weight: bold;
             padding-right: 10px;
           }
           &--date{
